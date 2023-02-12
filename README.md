@@ -15,3 +15,5 @@ Pour vous convaincre de la sincérité de notre démarche et de l'état d'esprit
 ## Lien
 
 https://www.linkedin.com/posts/quaialpha_startups-vidaezo-entrepreneurs-activity-7023571989759983616-a_mQ?utm_source=share&utm_medium=member_desktop
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BdYW56Zqu-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
