@@ -8,6 +8,7 @@ Ce repository contient le code source d'un site copiant l'aspect de ChatGPT, L'u
 
 Identifier et recruter 10 nouvelles #startups remontées à bloc et prêtes pour rejoindre notre programme d'incubation.
 
+
 ## Message
 
 Pour vous convaincre de la sincérité de notre démarche et de l'état d'esprit qui règne dans notre équipe, j'ai codé une version de chatGPT ou ChatCGT !
@@ -16,4 +17,7 @@ Pour vous convaincre de la sincérité de notre démarche et de l'état d'esprit
 
 https://www.linkedin.com/posts/quaialpha_startups-vidaezo-entrepreneurs-activity-7023571989759983616-a_mQ?utm_source=share&utm_medium=member_desktop
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BdYW56Zqu-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+https://user-images.githubusercontent.com/71904991/218341020-8668c379-22e1-4f36-8c16-878a3363f966.mp4
+
+
+
