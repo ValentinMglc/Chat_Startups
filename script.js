@@ -18,12 +18,35 @@ function addMessage(message, isRobotMessage) {
 }
 
 sendButton.addEventListener("click", function() {
-  let robotResponses = [
-    "Bonjour, je suis le robot de l'incubateur, rendez-vous sur www.quai-alpha.com",
-    "Mmmh, voyons voir... Pour cette question, je vous conseille de déposer directement un dossier de candidature sur www.quai-alpha.com/incubateur",
-  ];
+  let userQuestion = userInput.value.toLowerCase();
 
-  let robotResponse = robotResponses[Math.floor(Math.random() * robotResponses.length)];
+  let robotResponses = {
+    "bonjour": "Bonjour, je suis le robot de l'incubateur !",
+    "salut": "Salut, je suis le robot de l'incubateur !",
+    "hello": "Hello, je suis le robot de l'incubateur !",
+    "incubateur": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
+    "startup": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
+    "candidature": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
+    "aide": "Je suis là pour vous aider ! Comment puis-je vous aider ?"
+  };
+
+  let robotResponse = "Désolé, je n'ai pas compris ce que vous voulez dire. Pour plus d'informations, rendez-vous sur www.quai-alpha.com";
+
+  for (let key in robotResponses) {
+    if (userQuestion.indexOf(key) !== -1) {
+      robotResponse = robotResponses[key];
+      break;
+    }
+  }
+
+  // Correction de faute simple
+  for (let key in robotResponses) {
+    let levenshteinDistance = calculateLevenshteinDistance(userQuestion, key);
+    if (levenshteinDistance <= 2) {
+      robotResponse = robotResponses[key];
+      break;
+    }
+  }
 
   let userMessage = document.createElement("div");
   userMessage.classList.add("user-message");
@@ -58,4 +81,30 @@ userInput.addEventListener("keyup", function(event) {
   }
 });
 
+//Fonction de calcul de distance de Levenshtein
+function calculateLevenshteinDistance(a, b) {
+  if (a.length == 0) return b.length;
+  if (b.length == 0) return a.length;
 
+  let matrix = [];
+
+  // initialize the matrix
+  for (let i = 0; i <= b.length; i++) {
+    matrix[i] = [i];
+  }
+
+  for (let j = 0; j <= a.length; j++) {
+    matrix[0][j] = j;
+  }
+
+  for (let i = 1; i <= b.length; i++) {
+    for (let j = 1; j <= a.length; j++) {
+      if (b.charAt(i-1) == a.charAt(j-1)) {
+        matrix[i][j] = matrix[i-1][j-1];
+      } else {
+        matrix[i][j] = Math.min(matrix[i-1][j-1] + 1, Math.min(matrix[i][j-1] + 1, matrix[i-1][j] + 1));
+      }
+    }
+  }
+  return matrix[b.length][a.length];
+};
