@@ -80,9 +80,12 @@ sendButton.addEventListener("click", function() {
 
 userInput.addEventListener("keyup", function(event) {
   if (event.key === "Enter") {
+    userInput.blur();
     sendButton.click();
+    userInput.focus();
   }
 });
+
 
 //Fonction de calcul de distance de Levenshtein
 function calculateLevenshteinDistance(a, b) {
