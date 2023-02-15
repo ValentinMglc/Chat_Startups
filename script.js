@@ -69,6 +69,9 @@ sendButton.addEventListener("click", function() {
       i++;
     } else {
       clearInterval(typingInterval);
+
+      // Réinitialiser la propriété de zoom de la fenêtre à 1 après avoir envoyé le message
+      document.body.style.zoom = 1;
     }
   }, 50);
 
