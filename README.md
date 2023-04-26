@@ -11,7 +11,7 @@ Identifier et recruter 10 nouvelles #startups remontées à bloc et prêtes pour
 
 ## Message
 
-Pour vous convaincre de la sincérité de notre démarche et de l'état d'esprit qui règne dans notre équipe, j'ai codé une version de chatGPT ou ChatCGT !
+Pour vous convaincre de la sincérité de notre démarche et de l'état d'esprit qui règne dans notre équipe, j'ai codé une version de chatGPT !
 
 ## Lien
 
