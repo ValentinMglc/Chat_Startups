@@ -27,7 +27,11 @@ sendButton.addEventListener("click", function() {
     "incubateur": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
     "startup": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
     "candidature": "Pour déposer un dossier de candidature, rendez-vous sur www.quai-alpha.com/incubateur",
-    "aide": "Je suis là pour vous aider ! Comment puis-je vous aider ?"
+    "aide": "Je suis là pour vous aider ! Comment puis-je vous aider ?",
+    "merci": "Je suis là pour vous aider !",
+    "ça va ?": "Je suis un robot, je n'ai pas d'émotions, mais merci de vous en soucier !",
+    "tu sers à quoi ?": "Je suis là pour vous aider ! Comment puis-je vous aider ?",
+    "à quoi sert l'incubateur ?": "L'incubateur Quai Alpha accompagne les startups dans leur développement.",
   };
 
   let robotResponse = "Désolé, je n'ai pas compris ce que vous voulez dire. Pour plus d'informations, rendez-vous sur www.quai-alpha.com";
